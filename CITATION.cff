@@ -9,7 +9,6 @@ message: >-
 type: software
 authors:
   - given-names: Tamika
-    name-particle: J.
     family-names: Bassman
     email: tbassman@alumni.stanford.edu
     affiliation: Stanford University
