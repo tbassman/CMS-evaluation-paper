@@ -21,7 +21,7 @@ xline(2.0*4.22,'--','Color',rgb.gray,'HandleVisibility','off',...
 % Read and plot target spectra
 for gm = 1:length(in.fold_names)
     foldname = in.fold_names{gm};
-    load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+    load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
     
     plot(target_x,target_y,'LineStyle',in.line_types{gm},'Color',...
         in.color_rgbs{gm},'Marker',in.markers{gm},'linewidth',...
@@ -105,11 +105,11 @@ x_EDP = 1;
 % For each CMS-based target spectrum
 for tgt = 1:length(in.fold_names)-2 % Omit the UHS-based spectra at the end
     foldname = in.fold_names{tgt};
-    load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+    load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
     
     % Get T,Sa values of the 40 scaled selected response spectra
     Ts = knownPer;
-    Sas = SaKnown(IMs.recID,:).*repmat(IMs.scaleFac,1,size(SaKnown,2));
+    Sas = sel_spectra;
     
     % For each record associated with this target
     for gm = 1:size(Sas,1)
@@ -319,11 +319,11 @@ x_EDP = 1;
 % For each CMS-based target spectrum
 for tgt = 1:length(in.fold_names)-2 % Omit the UHS-based spectra at the end
     foldname = in.fold_names{tgt};
-    load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+    load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
     
     % Get T,Sa values of the 40 scaled selected response spectra
     Ts = knownPer;
-    Sas = SaKnown(IMs.recID,:).*repmat(IMs.scaleFac,1,size(SaKnown,2));
+    Sas = sel_spectra;
     
     % For each record associated with this target
     for gm = 1:size(Sas,1) % N
@@ -550,11 +550,11 @@ for gmset = 1:length(in.corr_fold_names)
     for tgt = 1:length(fold_names)
         
         foldname = fold_names{tgt};
-        load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+        load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
         
         % get scaled response spectra associated with this target
         Ts = knownPer;
-        Sas = SaKnown(IMs.recID,:).*repmat(IMs.scaleFac,1,size(SaKnown,2));
+        Sas = sel_spectra;
                 
         % For each record associated with this target
         for gm = 1:size(Sas,1)
@@ -833,11 +833,11 @@ for I = 1:3
         for tgt = 1:length(c_fold_names)
             
             foldname = c_fold_names{tgt};
-            load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+            load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
             
             % Get T,Sa values of the 40 scaled selected response spectra
             Ts = knownPer;
-            Sas = SaKnown(IMs.recID,:).*repmat(IMs.scaleFac,1,size(SaKnown,2));
+            Sas = sel_spectra;
             
             % For each record associated with this target
             for gm = 1:size(Sas,1) % N

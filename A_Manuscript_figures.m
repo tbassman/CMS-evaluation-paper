@@ -21,7 +21,7 @@ xline(2.0*4.22,'--','Color',rgb.gray,'HandleVisibility','off',...
 % Read and plot target spectra
 for gm = 1:length(in.fold_names)
     foldname = in.fold_names{gm};
-    load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+    load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
     
     figure(in.fig_num); hold on;
     plot(target_x,target_y,'LineStyle',in.line_types{gm},'Color',...
@@ -104,7 +104,7 @@ clear
 
 load('./param/fig_colors.mat') 
 load('./param/fig3_param.mat')
-load('./Ground_Motion/MCE_CMS_T1_v1/GMSel_Param.mat');
+load('./Ground_Motion/MCE_CMS_T1_v1/gm_sel_param.mat');
 
 figure(in.fig_num); hold on
 F(1) = subplot(1,4,1); hold on
@@ -116,8 +116,7 @@ xline(2.0*4.22,'--','Color',rgb.gray,'HandleVisibility','off',...
     'LineWidth',0.75);
 
 % Plot selected scaled spectra
-plot(knownPer,SaKnown(IMs.recID,:).*repmat(IMs.scaleFac,1,...
-    size(SaKnown,2)),'Color',rgb.gray,'HandleVisibility','off');
+plot(knownPer,sel_spectra,'Color',rgb.gray,'HandleVisibility','off');
 plot(100,100,'Color',rgb.gray,'DisplayName','Scaled Selected Spectra');
 
 % Plot target spectrum
@@ -266,7 +265,7 @@ xline(2.0*4.22,'--','Color',rgb.gray,'HandleVisibility','off',...
 % Read and plot target spectra
 for gm = 1:length(in.fold_names)
     foldname = in.fold_names{gm};
-    load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+    load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
 
     plot(target_x,target_y,'LineStyle',in.line_types{gm},'Color',...
         in.color_rgbs{gm},'Marker',in.markers{gm},'linewidth',...
@@ -308,7 +307,7 @@ xline(2.0*4.22,'--','Color',rgb.gray,'HandleVisibility','off',...
 % Read and plot target spectra
 for gm = 1:length(in.fold_names)
     foldname = in.fold_names{gm};
-    load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+    load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
 
     plot(target_x,target_y,'LineStyle',in.line_types{gm},'Color',...
         in.color_rgbs{gm},'Marker',in.markers{gm},'linewidth',...
@@ -357,7 +356,7 @@ xline(2.0*4.22,'--','Color',rgb.gray,'HandleVisibility','off',...
 % Read and plot target spectra
 for gm = 1:length(in.fold_names)
     foldname = in.fold_names{gm};
-    load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+    load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
 
     plot(target_x,target_y,'LineStyle',in.line_types{gm},'Color',...
         in.color_rgbs{gm},'Marker',in.markers{gm},'linewidth',...
@@ -474,11 +473,11 @@ x_EDP = 1;
 % For each CMS-based target spectrum
 for tgt = 1:length(in.fold_names)-2 % Omit the UHS-based spectra at the end
     foldname = in.fold_names{tgt};
-    load(['./Ground_Motion/',foldname,'/GMSel_Param.mat']);
+    load(['./Ground_Motion/',foldname,'/gm_sel_param.mat']);
     
     % Get T,Sa values of the 40 scaled selected response spectra
     Ts = knownPer;
-    Sas = SaKnown(IMs.recID,:).*repmat(IMs.scaleFac,1,size(SaKnown,2));
+    Sas = sel_spectra;
         
     % For each record associated with this target
     for gm = 1:size(Sas,1)
