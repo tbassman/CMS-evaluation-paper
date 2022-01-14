@@ -2,6 +2,7 @@
 % Script created by: Tamika Bassman, 01/12/2021
 
 close all
+addpath(genpath('Ground_Motion'),genpath('Analysis_Results'));
 
 %% Fig. S1
 
