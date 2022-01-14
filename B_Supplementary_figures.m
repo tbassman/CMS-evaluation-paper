@@ -1,8 +1,9 @@
 %% Supplementary Figures
-% Script created by: Tamika Bassman, 01/12/2021
+% Script created by: Tamika Bassman, 01/12/2022
 
 close all
-addpath(genpath('Ground_Motion'),genpath('Analysis_Results'));
+addpath(genpath('Ground_Motion'),genpath('Analysis_Results'),...
+    genpath('param'));
 
 %% Fig. S1
 
