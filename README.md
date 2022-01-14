@@ -8,7 +8,7 @@ Prior to running, unzip ```Ground_Motion.zip``` and ```Analysis_Results.zip```, 
 
 ### To cite this repo
 
-Please use ```CITATION.cff```.
+Click "Cite this repository" on the right.
 
 ### To contact
 
