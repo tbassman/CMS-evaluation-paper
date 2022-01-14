@@ -4,13 +4,13 @@
 cff-version: 1.2.0
 title: CMS-evaluation-paper
 message: >-
-  If you use this software and/or data, please cite
-  it using the metadata from this file.
+  If you use this software or data, please cite it
+  using the metadata from this file.
 type: software
 authors:
   - given-names: Tamika
-    family-names: Bassman
     name-particle: J.
+    family-names: Bassman
     email: tbassman@alumni.stanford.edu
     affiliation: Stanford University
     orcid: 'https://orcid.org/0000-0001-5784-1933'
@@ -18,3 +18,8 @@ identifiers:
   - type: url
     value: >-
       https://github.com/tbassman/CMS-evaluation-paper
+repository: 'https://github.com/tbassman/CMS-evaluation-paper'
+license: MIT
+commit: 4685740e09057b3fb4c7cfc63b51d19d361ebca0
+version: 1.0.0
+date-released: '2022-01-14'
