@@ -1,0 +1,20 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: CMS-evaluation-paper
+message: >-
+  If you use this software and/or data, please cite
+  it using the metadata from this file.
+type: software
+authors:
+  - given-names: Tamika
+    family-names: Bassman
+    name-particle: J.
+    email: tbassman@alumni.stanford.edu
+    affiliation: Stanford University
+    orcid: 'https://orcid.org/0000-0001-5784-1933'
+identifiers:
+  - type: url
+    value: >-
+      https://github.com/tbassman/CMS-evaluation-paper
