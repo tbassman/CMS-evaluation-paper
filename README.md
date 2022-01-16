@@ -4,7 +4,7 @@ This repo contains the data and scripts used to create the primary and supplemen
 
 ### To run code
 
-Prior to running, unzip ```Ground_Motion.zip``` and ```Analysis_Results.zip```, place the two ```Ground_Motion``` and ```Analysis_Results``` folders in the same directory as the .m files and ```param``` folder.
+Prior to running, unzip ```Ground_Motion.zip``` and ```Analysis_Results.zip```, and place the two ```Ground_Motion``` and ```Analysis_Results``` folders in the same directory as the .m files and ```param``` folder.
 
 ### To cite this repo
 
