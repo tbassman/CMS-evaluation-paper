@@ -22,10 +22,10 @@ preferred-citation:
     orcid: "https://orcid.org/0000-0003-2744-9599" 
   doi: "10.0000/00000"
   journal: "Submitted to Journal of Structural Engineering, under review."
-  month: 9
+  month: 1
   start: 1 # First page number
   end: 10 # Last page number
-  title: "My awesome research software"
+  title: "Evaluation of Conditional Mean Spectra Code Criteria for Ground Motion Selection"
   issue: 1
   volume: 1
-  year: 2021
+  year: 2022
