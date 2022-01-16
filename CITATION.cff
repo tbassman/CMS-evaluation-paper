@@ -1,25 +1,32 @@
 cff-version: 1.2.0
-title: "CMS-evaluation-paper"
-message: "If you use this software or data, please cite it using the metadata from this file."
-type: software
+message: "If you use this software, please cite it as below."
 authors:
-  - given-names: Tamika
-    family-names: Bassman
-    orcid: "https://orcid.org/0000-0001-5784-1933"
-license: MIT
-version: 1.0.0
-date-released: 2022-01-14
-url: "https://github.com/tbassman/CMS-evaluation-paper"
+- family-names: "Lisa"
+  given-names: "Mona"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Bot"
+  given-names: "Hew"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "My Research Software"
+version: 2.0.4
+doi: 10.5281/zenodo.1234
+date-released: 2017-12-18
+url: "https://github.com/github/linguist"
 preferred-citation:
   type: article
   authors:
-  - given-names: Tamika
-    family-names: Bassman
-    orcid: "https://orcid.org/0000-0001-5784-1933"
-  - given-names: Kuanshi
-    family-names: Zhong
-    orcid: "https://orcid.org/0000-0003-2418-9744"
-  - given-names: Jack
-    family-names: Baker
-    orcid: "https://orcid.org/0000-0003-2744-9599"
-  journal: "Submitted to Journal of Structural Engineering, under review."
+  - family-names: "Lisa"
+    given-names: "Mona"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Bot"
+    given-names: "Hew"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  doi: "10.0000/00000"
+  journal: "Journal Title"
+  month: 9
+  start: 1 # First page number
+  end: 10 # Last page number
+  title: "My awesome research software"
+  issue: 1
+  volume: 1
+  year: 2021
