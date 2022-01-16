@@ -23,7 +23,5 @@ preferred-citation:
   doi: "10.0000/00000"
   journal: "Submitted to Journal of Structural Engineering, under review."
   month: 1
-  start: 1 # First page number
-  end: 10 # Last page number
   title: "Evaluation of Conditional Mean Spectra Code Criteria for Ground Motion Selection"
   year: 2022
