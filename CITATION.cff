@@ -7,7 +7,6 @@ authors:
     family-names: Bassman
     orcid: "https://orcid.org/0000-0001-5784-1933"
 license: MIT
-#   doi: "10.0000/00000"
 version: 1.0.0
 date-released: 2022-01-14
 url: "https://github.com/tbassman/CMS-evaluation-paper"
@@ -23,12 +22,4 @@ preferred-citation:
   - given-names: Jack
     family-names: Baker
     orcid: "https://orcid.org/0000-0003-2744-9599"
-#   doi: "10.0000/00000"
   journal: "Submitted to Journal of Structural Engineering, under review."
-#   month: 9
-#   start: 1 # First page number
-#   end: 10 # Last page number
-#   title: "My awesome research software"
-#   issue: 1
-#   volume: 1
-#   year: 2022
